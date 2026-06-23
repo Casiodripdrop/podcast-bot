@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Deeptech Daily</title>
+    <link>https://casiodripdrop.github.io/podcast-bot</link>
+    <language>en-us</language>
+    <description>A short daily briefing on deeptech, robotics, and space startups.</description>
+    <itunes:author>Deeptech Daily</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology" />
+    
+    <item>
+      <title>Deeptech Daily — 2026-06-23</title>
+      <description>Hey everyone, welcome back to Deeptech Daily. I'm your host, and today is June 23rd, 2026. We've got a packed show today — AI in orbit, China making some serious moves, robots getting smarter, and a half-billion-euro defense drone raise that you absolutely need to hear about. Let's get into...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-23.mp3" length="6497280" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-23.mp3</guid>
+      <pubDate>Tue, 23 Jun 2026 16:33:39 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+    </item>
+  </channel>
+</rss>
