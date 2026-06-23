@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {"name": "SpaceNews", "url": "https://spacenews.com/feed/"},
+    {"name": "The Robot Report", "url": "https://www.therobotreport.com/feed/"},
+    {"name": "TechCrunch", "url": "https://techcrunch.com/feed/"},
+    {"name": "Crunchbase News", "url": "https://news.crunchbase.com/feed/"},
+    {"name": "IEEE Spectrum", "url": "https://spectrum.ieee.org/rss/fulltext"},
+    {"name": "Tech.eu", "url": "https://tech.eu/feed/"},
+    {"name": "Sifted", "url": "https://sifted.eu/feed/"},
+    {"name": "NASASpaceflight", "url": "https://www.nasaspaceflight.com/feed/"}
+  ]
+}

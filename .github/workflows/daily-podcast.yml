@@ -1,0 +1,37 @@
+name: Daily Podcast
+
+on:
+  schedule:
+    # 05:00 UTC ≈ 06:00 oder 07:00 Berlin-Zeit (je nach Sommerzeit)
+    - cron: "0 5 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run podcast generator
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PODCAST_BASE_URL: ${{ vars.PODCAST_BASE_URL }}
+        run: python main.py
+
+      - name: Commit and push new episode
+        run: |
+          git config user.name "podcast-bot"
+          git config user.email "actions@github.com"
+          git add docs/
+          git commit -m "Add episode for $(date +'%Y-%m-%d')" || echo "Nothing to commit"
+          git push
