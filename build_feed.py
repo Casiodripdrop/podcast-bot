@@ -82,6 +82,7 @@ def build_rss(episodes):
     <description>A short daily briefing on deeptech, robotics, and space startups.</description>
     <itunes:author>{OWNER_NAME}</itunes:author>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
     <itunes:category text="Technology" />
     <itunes:image href="{BASE_URL}/{COVER_FILENAME}" />
     <image>
