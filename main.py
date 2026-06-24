@@ -17,7 +17,9 @@ def main():
 
     today = datetime.utcnow().strftime("%Y-%m-%d")
     date_human = datetime.utcnow().strftime("%A, %B %d, %Y")
-    script_text = generate_script(articles, date_human)
+    result = generate_script(articles, date_human)
+    episode_title = result["title"]
+    script_text = result["script"]
 
     mp3_filename = f"episode-{today}.mp3"
     os.makedirs("docs", exist_ok=True)
@@ -25,13 +27,12 @@ def main():
     generate_audio(script_text, mp3_path)
 
     file_size = os.path.getsize(mp3_path)
-    title = f"Deeptech Daily — {today}"
     description = script_text[:300].rsplit(" ", 1)[0] + "..."
 
-    episodes = add_episode(title, description, mp3_filename, file_size)
+    episodes = add_episode(episode_title, description, mp3_filename, file_size)
     build_rss(episodes)
 
-    print(f"Generated episode: {mp3_filename}")
+    print(f"Generated episode: {mp3_filename} -- \"{episode_title}\"")
 
 
 if __name__ == "__main__":

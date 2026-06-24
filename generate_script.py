@@ -1,4 +1,5 @@
 import os
+import json
 from anthropic import Anthropic
 
 client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
@@ -24,13 +25,22 @@ partnerships, new products, or notable people moves (NOT funding rounds).
 amount, what they do, in one or two sentences each. Do not over-explain these.
 7. CLOSING (1-2 sentences): short, warm sign-off.
 
-Hard limits:
+Hard limits for the script:
 - Maximum 7-8 stories total across all sections combined. Skip anything \
 borderline or repetitive -- pick only the most interesting items, quality over quantity.
 - Use natural spoken language (contractions, short sentences) -- NOT bullet points.
-- Output PURE spoken script text only -- no markdown, no headers, no bullet points, \
-no section labels like "TOP STORIES" -- weave the structure in naturally through \
-the spoken transitions instead.
+- The script text itself must be PURE spoken text -- no markdown, no headers, no \
+bullet points, no section labels like "TOP STORIES" -- weave the structure in \
+naturally through the spoken transitions instead.
+
+Also write a short, punchy EPISODE TITLE (under 70 characters) that teases the \
+single most interesting story of the day -- something a listener would want to \
+click on in a podcast app. Do not just say "Deeptech Daily" -- give it real content, \
+e.g. "SpaceX's New Engine Test + $40M for a Robotics Startup".
+
+Respond with ONLY a raw JSON object, no markdown code fences, no preamble, in \
+exactly this shape:
+{{"title": "...", "script": "..."}}
 
 Articles:
 {articles}
@@ -44,12 +54,32 @@ def build_articles_blob(articles):
     return blob
 
 
+def _strip_code_fences(text):
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("\n", 1)[1] if "\n" in text else text
+        if text.endswith("```"):
+            text = text[: -3]
+        if text.startswith("json"):
+            text = text[4:]
+    return text.strip()
+
+
 def generate_script(articles, date_str):
+    """Returns a dict: {"title": str, "script": str}"""
     blob = build_articles_blob(articles)
     prompt = PROMPT_TEMPLATE.format(articles=blob, date_str=date_str)
     message = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=1500,
+        max_tokens=1800,
         messages=[{"role": "user", "content": prompt}],
     )
-    return message.content[0].text
+    raw_text = message.content[0].text
+    cleaned = _strip_code_fences(raw_text)
+    try:
+        data = json.loads(cleaned)
+        return {"title": data["title"], "script": data["script"]}
+    except (json.JSONDecodeError, KeyError) as e:
+        # Fallback: falls das Parsen fehlschlaegt, den Rohtext als Skript nutzen
+        print(f"Warning: could not parse JSON response ({e}), using raw text as script.")
+        return {"title": f"Deeptech Daily — {date_str}", "script": raw_text}
