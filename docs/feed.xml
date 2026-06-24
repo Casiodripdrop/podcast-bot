@@ -21,25 +21,14 @@
     </itunes:owner>
     
     <item>
-      <title>SpaceX's Secret Reentry Capsule + Agility Robotics Goes Public</title>
+      <title>SpaceX's Secret Starfall Mission + Agility Robotics Goes Public</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
-      <description>Hey everyone, welcome back to Deeptech Daily. It's Wednesday, June 24, 2026, and we've got a packed show today — a mysterious SpaceX mission, a humanoid robot company heading to Wall Street, and a drone startup raising half a billion euros. Let's get into it.
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Wednesday, June 24, 2026, and we've got a packed one today — a secretive SpaceX mission, a major humanoid robotics milestone, and some big moves in the satellite world. Let's get into it.
 
-We're starting with SpaceX, because of...</description>
-      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-24.mp3" length="5356208" type="audio/mpeg" />
+First up, SpaceX launched something called Starfall...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-24.mp3" length="4685941" type="audio/mpeg" />
       <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-24.mp3</guid>
-      <pubDate>Wed, 24 Jun 2026 20:57:28 +0000</pubDate>
-      <itunes:duration>300</itunes:duration>
-      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Deeptech Daily — 2026-06-23</title>
-      <link>https://casiodripdrop.github.io/podcast-bot</link>
-      <description>Hey everyone, welcome back to Deeptech Daily. I'm your host, and today is June 23rd, 2026. We've got a packed show today — AI in orbit, China making some serious moves, robots getting smarter, and a half-billion-euro defense drone raise that you absolutely need to hear about. Let's get into...</description>
-      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-23.mp3" length="6497280" type="audio/mpeg" />
-      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-23.mp3</guid>
-      <pubDate>Tue, 23 Jun 2026 16:33:39 +0000</pubDate>
+      <pubDate>Wed, 24 Jun 2026 21:24:46 +0000</pubDate>
       <itunes:duration>300</itunes:duration>
       <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
       <itunes:explicit>false</itunes:explicit>
