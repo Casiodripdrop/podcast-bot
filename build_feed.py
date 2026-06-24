@@ -63,7 +63,7 @@ def build_rss(episodes):
         items_xml += f"""
     <item>
       <title>{_escape(ep['title'])}</title>
-      <link>{mp3_url}</link>
+      <link>{BASE_URL}</link>
       <description>{_escape(ep['description'])}</description>
       <enclosure url="{mp3_url}" length="{ep['file_size_bytes']}" type="audio/mpeg" />
       <guid>{mp3_url}</guid>

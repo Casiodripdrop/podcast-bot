@@ -43,3 +43,24 @@ def generate_audio(script_text, output_path, voice=None, speed=None):
                 speed=speed,
             )
             out_f.write(response.content)
+
+
+def tag_mp3(path, title, artist="Deeptech Daily", album="Deeptech Daily"):
+    """Fuegt ID3v2-Tags hinzu (Titel/Interpret/Album) -- viele Podcast-Validatoren
+    und Player erwarten diese Metadaten direkt in der MP3-Datei."""
+    from mutagen.mp3 import MP3
+    from mutagen.id3 import ID3, TIT2, TPE1, TALB, ID3NoHeaderError
+
+    audio = MP3(path)
+    try:
+        audio.add_tags()
+    except Exception:
+        pass  # Tags existieren bereits
+
+    if audio.tags is None:
+        audio.tags = ID3()
+
+    audio.tags.add(TIT2(encoding=3, text=title))
+    audio.tags.add(TPE1(encoding=3, text=artist))
+    audio.tags.add(TALB(encoding=3, text=album))
+    audio.save(v2_version=3)

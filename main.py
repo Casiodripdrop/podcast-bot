@@ -3,7 +3,7 @@ from datetime import datetime
 
 from fetch_news import load_sources, fetch_articles
 from generate_script import generate_script
-from generate_audio import generate_audio
+from generate_audio import generate_audio, tag_mp3
 from build_feed import add_episode, build_rss
 
 
@@ -25,6 +25,7 @@ def main():
     os.makedirs("docs", exist_ok=True)
     mp3_path = os.path.join("docs", mp3_filename)
     generate_audio(script_text, mp3_path)
+    tag_mp3(mp3_path, title=episode_title)
 
     file_size = os.path.getsize(mp3_path)
     description = script_text[:300].rsplit(" ", 1)[0] + "..."
