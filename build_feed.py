@@ -100,3 +100,73 @@ def build_rss(episodes):
     os.makedirs(os.path.dirname(FEED_FILE), exist_ok=True)
     with open(FEED_FILE, "w") as f:
         f.write(rss)
+
+
+def _format_display_date(pub_date_rfc822):
+    try:
+        from email.utils import parsedate_to_datetime
+        dt = parsedate_to_datetime(pub_date_rfc822)
+        return dt.strftime("%B %d, %Y")
+    except Exception:
+        return pub_date_rfc822
+
+
+def build_index_html(episodes):
+    """Baut eine einfache Landingpage, damit der <link>-Tag im Feed auf eine echte
+    Webseite zeigt (sonst meckern Validatoren/Player ueber "failed to load website")."""
+    episode_blocks = ""
+    for ep in episodes[:30]:  # nur die letzten 30 anzeigen, Seite bleibt schlank
+        mp3_url = f"{BASE_URL}/{ep['mp3_filename']}"
+        display_date = _format_display_date(ep["pub_date"])
+        episode_blocks += f"""
+    <article class="episode">
+      <h2>{_escape(ep['title'])}</h2>
+      <p class="date">{display_date}</p>
+      <audio controls preload="none" src="{mp3_url}"></audio>
+      <p class="desc">{_escape(ep['description'])}</p>
+    </article>"""
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deeptech Daily</title>
+<style>
+  body {{
+    background: #121110;
+    color: #f0ebe4;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }}
+  header {{ text-align: center; margin-bottom: 50px; }}
+  header img {{ width: 160px; height: 160px; border-radius: 12px; border: 2px solid #c45a29; }}
+  h1 {{ font-size: 28px; letter-spacing: 1px; margin: 20px 0 6px; }}
+  .tagline {{ color: #c45a29; letter-spacing: 2px; font-size: 13px; text-transform: uppercase; }}
+  .subscribe {{ margin-top: 18px; font-size: 14px; color: #999; word-break: break-all; }}
+  .episode {{
+    border-top: 1px solid #2a2826;
+    padding: 26px 0;
+  }}
+  .episode h2 {{ font-size: 18px; margin: 0 0 6px; }}
+  .episode .date {{ color: #777; font-size: 13px; margin: 0 0 14px; }}
+  .episode audio {{ width: 100%; margin-bottom: 14px; }}
+  .episode .desc {{ color: #c9c4bc; font-size: 14px; line-height: 1.5; }}
+</style>
+</head>
+<body>
+  <header>
+    <img src="{COVER_FILENAME}" alt="Deeptech Daily cover art" />
+    <h1>DEEPTECH DAILY</h1>
+    <div class="tagline">Robotics · Space · Startups</div>
+    <p class="subscribe">RSS-Feed zum Abonnieren: {BASE_URL}/feed.xml</p>
+  </header>
+  {episode_blocks}
+</body>
+</html>"""
+
+    index_path = os.path.join(os.path.dirname(FEED_FILE), "index.html")
+    with open(index_path, "w") as f:
+        f.write(html)

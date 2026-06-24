@@ -4,7 +4,7 @@ from datetime import datetime
 from fetch_news import load_sources, fetch_articles
 from generate_script import generate_script
 from generate_audio import generate_audio, tag_mp3
-from build_feed import add_episode, build_rss
+from build_feed import add_episode, build_rss, build_index_html
 
 
 def main():
@@ -32,6 +32,7 @@ def main():
 
     episodes = add_episode(episode_title, description, mp3_filename, file_size)
     build_rss(episodes)
+    build_index_html(episodes)
 
     print(f"Generated episode: {mp3_filename} -- \"{episode_title}\"")
 
