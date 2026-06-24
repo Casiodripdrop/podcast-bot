@@ -9,7 +9,9 @@ covering deeptech, robotics, and space startups.
 Below are recent articles. Write a ~700-800 word spoken-word podcast script \
 (about 5 minutes when read aloud) with this EXACT structure, in this order:
 
-1. OPENING (2-3 sentences): brief, energetic greeting and today's date ({date_str}).
+1. OPENING (2-3 sentences): brief, energetic greeting. State today's date EXACTLY \
+as given here: "{date_str}" -- use this exact wording, do not recalculate or guess \
+the weekday yourself.
 2. TOP STORIES section: pick the 2-3 most important/exciting stories overall \
 (breakthroughs, launches, major news). Give each a bit of room to breathe -- \
 explain what happened and why it matters.

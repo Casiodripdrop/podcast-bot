@@ -5,10 +5,10 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 MAX_CHARS = 3900  # etwas Puffer unter dem 4096-Zeichen-Limit von OpenAI TTS
 
-# "nova" wirkt energetischer/heller als "onyx" (ruhig/tief).
+# "onyx" ist ruhiger/tiefer, "nova" energetischer/heller.
 # speed: 0.25-4.0, 1.0 = normal. Per Variable TTS_SPEED ueberschreibbar.
-DEFAULT_VOICE = os.environ.get("TTS_VOICE", "nova")
-DEFAULT_SPEED = float(os.environ.get("TTS_SPEED", "1.15"))
+DEFAULT_VOICE = os.environ.get("TTS_VOICE", "onyx")
+DEFAULT_SPEED = float(os.environ.get("TTS_SPEED", "1.0"))
 
 
 def split_text(text, max_len=MAX_CHARS):

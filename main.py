@@ -16,7 +16,8 @@ def main():
         return
 
     today = datetime.utcnow().strftime("%Y-%m-%d")
-    script_text = generate_script(articles, today)
+    date_human = datetime.utcnow().strftime("%A, %B %d, %Y")
+    script_text = generate_script(articles, date_human)
 
     mp3_filename = f"episode-{today}.mp3"
     os.makedirs("docs", exist_ok=True)
