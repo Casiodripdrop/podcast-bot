@@ -21,14 +21,14 @@
     </itunes:owner>
     
     <item>
-      <title>SpaceX's Secret Starfall Mission + Agility Robotics Goes Public</title>
+      <title>SpaceX's Secret Reentry Capsule + Agility Robotics Goes Public</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
-      <description>Hey everyone, welcome back to Deeptech Daily. It's Wednesday, June 24, 2026, and we've got a packed one today — a secretive SpaceX mission, a major humanoid robotics milestone, and some big moves in the satellite world. Let's get into it.
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Wednesday, June 24, 2026, and we've got a packed show today — a secretive SpaceX mission, a big robotics IPO, and a drone startup that just raised half a billion euros. Let's get into it.
 
-First up, SpaceX launched something called Starfall...</description>
-      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-24.mp3" length="4685941" type="audio/mpeg" />
+So the story everyone's been buzzing about is SpaceX's...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-24.mp3" length="5457109" type="audio/mpeg" />
       <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-24.mp3</guid>
-      <pubDate>Wed, 24 Jun 2026 21:24:46 +0000</pubDate>
+      <pubDate>Wed, 24 Jun 2026 21:59:48 +0000</pubDate>
       <itunes:duration>300</itunes:duration>
       <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
       <itunes:explicit>false</itunes:explicit>
