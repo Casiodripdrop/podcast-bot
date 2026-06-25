@@ -2,8 +2,10 @@ name: Daily Podcast
 
 on:
   schedule:
-    # 05:00 UTC ≈ 06:00 oder 07:00 Berlin-Zeit (je nach Sommerzeit)
-    - cron: "0 5 * * *"
+    # 4:17 UTC statt voller Stunde -- GitHub Actions verzoegert Cronjobs, die
+    # exakt zur vollen Stunde starten sollen, bei hoher Last oft erheblich.
+    # 4:17 UTC ≈ 6:17 Berlin-Zeit im Sommer, 5:17 im Winter.
+    - cron: "17 4 * * *"
   workflow_dispatch: {}
 
 jobs:
@@ -26,6 +28,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PODCAST_BASE_URL: ${{ vars.PODCAST_BASE_URL }}
+          PODCAST_OWNER_EMAIL: ${{ vars.PODCAST_OWNER_EMAIL }}
+          PODCAST_OWNER_NAME: ${{ vars.PODCAST_OWNER_NAME }}
         run: python main.py
 
       - name: Commit and push new episode

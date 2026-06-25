@@ -1,5 +1,6 @@
 import feedparser
 import json
+import os
 from datetime import datetime, timedelta
 
 KEYWORDS = [
@@ -8,10 +9,46 @@ KEYWORDS = [
     "series a", "series b", "series c", "raises", "raised", "startup",
 ]
 
+SEEN_FILE = "docs/seen_links.json"
+SEEN_MAX_AGE_DAYS = 14  # aeltere Eintraege verfallen, damit die Datei nicht unbegrenzt waechst
+
 
 def load_sources(path="feeds.json"):
     with open(path) as f:
         return json.load(f)["sources"]
+
+
+def load_seen_links(path=SEEN_FILE, max_age_days=SEEN_MAX_AGE_DAYS):
+    """Laedt bereits verwendete Artikel-Links der letzten N Tage: {link: 'YYYY-MM-DD'}"""
+    if not os.path.exists(path):
+        return {}
+    with open(path) as f:
+        seen = json.load(f)
+    cutoff = datetime.utcnow().date() - timedelta(days=max_age_days)
+    fresh = {}
+    for link, date_str in seen.items():
+        try:
+            if datetime.strptime(date_str, "%Y-%m-%d").date() >= cutoff:
+                fresh[link] = date_str
+        except ValueError:
+            continue
+    return fresh
+
+
+def save_seen_links(seen, path=SEEN_FILE):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(seen, f, indent=2)
+
+
+def mark_as_seen(articles, seen, today_str=None):
+    """Markiert alle heute gefundenen Artikel als 'gesehen', damit sie an \
+    Folgetagen nicht erneut auftauchen -- unabhaengig davon, ob Claude sie \
+    am Ende tatsaechlich ins Skript aufgenommen hat."""
+    today_str = today_str or datetime.utcnow().strftime("%Y-%m-%d")
+    for a in articles:
+        seen[a["link"]] = today_str
+    return seen
 
 
 def fetch_articles(sources, hours_back=36, max_per_feed=10):
