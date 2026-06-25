@@ -17,18 +17,18 @@
     </image>
     <itunes:owner>
       <itunes:name>Deeptech Daily</itunes:name>
-      <itunes:email>you@example.com</itunes:email>
+      <itunes:email>niklas.struck@aol.de</itunes:email>
     </itunes:owner>
     
     <item>
-      <title>SpaceX's Secret Starfall Capsule + Agility Robotics Goes Public</title>
+      <title>Agility Robotics Goes Public + China's Reusable Rocket Debut</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
-      <description>Hey everyone, welcome back to Deeptech Daily. It's Thursday, June 25, 2026, and we've got a packed show today — a secretive SpaceX mission, a humanoid robot company heading to Wall Street, and some really interesting moves in the satellite world. Let's get into it.
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Thursday, June 25, 2026, and we've got a packed show today covering humanoid robots going public, China's next big rocket move, and a new satellite defense partnership you're going to want to hear about. Let's get into it.
 
-So the biggest story has to be...</description>
-      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-25.mp3" length="5529663" type="audio/mpeg" />
+Okay, the biggest story...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-25.mp3" length="5376384" type="audio/mpeg" />
       <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-25.mp3</guid>
-      <pubDate>Thu, 25 Jun 2026 08:30:03 +0000</pubDate>
+      <pubDate>Thu, 25 Jun 2026 13:10:27 +0000</pubDate>
       <itunes:duration>300</itunes:duration>
       <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
       <itunes:explicit>false</itunes:explicit>
