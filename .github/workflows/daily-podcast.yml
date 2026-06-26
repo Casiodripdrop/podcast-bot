@@ -1,11 +1,9 @@
 name: Daily Podcast
 
+# Wird taeglich extern via cron-job.org getriggert (GitHubs eigener
+# "schedule"-Trigger verzoegerte sich zuverlaessig um Stunden). Der
+# "Run workflow"-Button in der Actions-UI funktioniert weiterhin fuer Tests.
 on:
-  schedule:
-    # 4:17 UTC statt voller Stunde -- GitHub Actions verzoegert Cronjobs, die
-    # exakt zur vollen Stunde starten sollen, bei hoher Last oft erheblich.
-    # 4:17 UTC ≈ 6:17 Berlin-Zeit im Sommer, 5:17 im Winter.
-    - cron: "17 4 * * *"
   workflow_dispatch: {}
 
 jobs:
