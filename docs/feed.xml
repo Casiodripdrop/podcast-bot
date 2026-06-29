@@ -21,14 +21,53 @@
     </itunes:owner>
     
     <item>
-      <title>Rocket Lab Scores NASA Triple-Launch Deal + UGV Startup Goes to War</title>
+      <title>AGIBOT's 15,000th Robot + Euclid Peers Into the Milky Way's Heart</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
-      <description>Hey everyone, welcome back to Deeptech Daily. It's Friday, June 26, 2026, and we've got a packed show today — rockets, robots, and some genuinely interesting AI bets. Let's get into it.
+      <description>Hey everyone, welcome back to Deeptech Daily. It is Monday, June 29, 2026, and we've got a couple of genuinely exciting stories to dig into today — one from the world of robotics, one from deep space. Let's get into it.
 
-First up, Rocket Lab just landed a significant NASA contract to fly three Electron rockets in 2027, carrying a...</description>
-      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-26.mp3" length="5225528" type="audio/mpeg" />
+First up, a major milestone in embodied AI. Chinese robotics company AGIBOT...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-29.mp3" length="4319819" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-29.mp3</guid>
+      <pubDate>Mon, 29 Jun 2026 04:02:01 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Deeptech Daily — Sunday, June 28, 2026</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>I need more articles to work with to fill out a proper episode. Let me work with what's available, but the content is quite thin — I'll do my best with these three articles plus reasonable context.
+
+{"title": "Asia's AI Breakout: The Export Ban Creating a New Tech Superpower", "script": "Hey...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-28.mp3" length="5031356" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-28.mp3</guid>
+      <pubDate>Sun, 28 Jun 2026 04:01:58 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Musk Buys SpaceX Alumni Startup + $320M to Train Robots with Video Games</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Saturday, June 27, 2026, and we've got a genuinely fascinating mix of stories today — from Elon Musk snapping up a stealth startup to a wild new approach to training robots using video game footage. Let's get into it.
+
+So the story that caught my...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-27.mp3" length="5140493" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-27.mp3</guid>
+      <pubDate>Sat, 27 Jun 2026 04:02:28 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Starlink Vets Go Independent + Europe's Orbit Security Wake-Up Call</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily — I'm so glad you're here. It's Friday, June 26, 2026, and we've got a genuinely interesting mix of stories today spanning space security, the future of satellite infrastructure, and some notable moves in the investment world. Let's get into it.
+
+First...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-26.mp3" length="5029972" type="audio/mpeg" />
       <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-26.mp3</guid>
-      <pubDate>Fri, 26 Jun 2026 08:04:20 +0000</pubDate>
+      <pubDate>Fri, 26 Jun 2026 12:27:43 +0000</pubDate>
       <itunes:duration>300</itunes:duration>
       <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
       <itunes:explicit>false</itunes:explicit>
