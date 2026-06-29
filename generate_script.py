@@ -32,14 +32,22 @@ borderline or repetitive -- pick only the most interesting items, quality over q
 - The script text itself must be PURE spoken text -- no markdown, no headers, no \
 bullet points, no section labels like "TOP STORIES" -- weave the structure in \
 naturally through the spoken transitions instead.
+- If there are fewer articles than usual, simply cover all of them in more depth \
+and spend a bit longer on context/why-it-matters for each one -- the episode can \
+run a bit shorter than 5 minutes if needed. NEVER mention the number of available \
+articles, never apologize for thin content, never comment on the article supply at \
+all -- the listener should never know how many sources you had. Just deliver a \
+normal-sounding episode with whatever is given.
 
 Also write a short, punchy EPISODE TITLE (under 70 characters) that teases the \
 single most interesting story of the day -- something a listener would want to \
 click on in a podcast app. Do not just say "Deeptech Daily" -- give it real content, \
 e.g. "SpaceX's New Engine Test + $40M for a Robotics Startup".
 
-Respond with ONLY a raw JSON object, no markdown code fences, no preamble, in \
-exactly this shape:
+CRITICAL OUTPUT FORMAT: Respond with ONLY a single raw JSON object and absolutely \
+nothing else -- no preamble, no notes, no commentary before or after, no markdown \
+code fences. Your entire response must be parseable directly as JSON, in exactly \
+this shape:
 {{"title": "...", "script": "..."}}
 
 Articles:
@@ -65,8 +73,16 @@ def _strip_code_fences(text):
     return text.strip()
 
 
+class ScriptGenerationError(Exception):
+    """Wird ausgeloest, wenn Claude kein gueltiges JSON liefert -- dann lieber \
+    die Episode fuer heute auslassen, statt kaputten/unbeabsichtigten Text \
+    (z.B. Meta-Kommentare) zu veroeffentlichen."""
+    pass
+
+
 def generate_script(articles, date_str):
-    """Returns a dict: {"title": str, "script": str}"""
+    """Returns a dict: {"title": str, "script": str}. Wirft ScriptGenerationError \
+    falls die Antwort nicht als JSON parsbar ist, statt unsicheren Rohtext zu nutzen."""
     blob = build_articles_blob(articles)
     prompt = PROMPT_TEMPLATE.format(articles=blob, date_str=date_str)
     message = client.messages.create(
@@ -78,8 +94,12 @@ def generate_script(articles, date_str):
     cleaned = _strip_code_fences(raw_text)
     try:
         data = json.loads(cleaned)
-        return {"title": data["title"], "script": data["script"]}
-    except (json.JSONDecodeError, KeyError) as e:
-        # Fallback: falls das Parsen fehlschlaegt, den Rohtext als Skript nutzen
-        print(f"Warning: could not parse JSON response ({e}), using raw text as script.")
-        return {"title": f"Deeptech Daily — {date_str}", "script": raw_text}
+        title = data["title"]
+        script = data["script"]
+        if not title.strip() or not script.strip():
+            raise ValueError("title or script is empty")
+        return {"title": title, "script": script}
+    except (json.JSONDecodeError, KeyError, ValueError) as e:
+        print(f"Error: could not parse a valid script from Claude's response ({e}).")
+        print(f"Raw response was:\n{raw_text[:500]}")
+        raise ScriptGenerationError(str(e)) from e

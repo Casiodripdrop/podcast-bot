@@ -8,9 +8,13 @@ from fetch_news import (
     save_seen_links,
     mark_as_seen,
 )
-from generate_script import generate_script
+from generate_script import generate_script, ScriptGenerationError
 from generate_audio import generate_audio, tag_mp3
 from build_feed import add_episode, build_rss, build_index_html
+
+# Unter dieser Anzahl neuer Artikel wird der Tag ausgelassen, statt eine
+# duenne/erzwungene Episode zu erzeugen.
+MIN_ARTICLES = 4
 
 
 def main():
@@ -22,14 +26,22 @@ def main():
     articles = [a for a in all_fetched if a["link"] not in seen]
 
     print(f"Fetched {len(all_fetched)} candidate articles, "
-          f"{len(articles)} are new (not covered in the last {14} days).")
+          f"{len(articles)} are new (not covered in the last 14 days).")
 
-    if not articles:
-        print("No new relevant articles today, skipping.")
+    if len(articles) < MIN_ARTICLES:
+        print(f"Only {len(articles)} new article(s) found (minimum is "
+              f"{MIN_ARTICLES}) -- skipping today's episode rather than "
+              f"forcing a thin one.")
         return
 
     date_human = datetime.utcnow().strftime("%A, %B %d, %Y")
-    result = generate_script(articles, date_human)
+    try:
+        result = generate_script(articles, date_human)
+    except ScriptGenerationError:
+        print("Script generation failed (invalid response from Claude) -- "
+              "skipping today's episode rather than publishing broken content.")
+        return
+
     episode_title = result["title"]
     script_text = result["script"]
 
