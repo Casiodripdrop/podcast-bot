@@ -13,8 +13,9 @@ from generate_audio import generate_audio, tag_mp3
 from build_feed import add_episode, build_rss, build_index_html
 
 # Unter dieser Anzahl neuer Artikel wird der Tag ausgelassen, statt eine
-# duenne/erzwungene Episode zu erzeugen.
-MIN_ARTICLES = 4
+# erzwungene Episode ohne echte Substanz zu erzeugen. Dank mehr Quellen und
+# der Anti-Erfindungs-Regel im Prompt reicht ein niedriger Wert hier aus.
+MIN_ARTICLES = 2
 
 
 def main():

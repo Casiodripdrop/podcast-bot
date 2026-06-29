@@ -38,6 +38,11 @@ run a bit shorter than 5 minutes if needed. NEVER mention the number of availabl
 articles, never apologize for thin content, never comment on the article supply at \
 all -- the listener should never know how many sources you had. Just deliver a \
 normal-sounding episode with whatever is given.
+- NEVER invent or guess specific facts that are not present in the articles below \
+-- no invented funding amounts, investor names, founder names, dates, or product \
+details. If an article's summary is vague, describe it at that same level of \
+generality (e.g. "raised a new funding round" instead of guessing a dollar figure) \
+or add only well-established general background knowledge, never fabricated specifics.
 
 Also write a short, punchy EPISODE TITLE (under 70 characters) that teases the \
 single most interesting story of the day -- something a listener would want to \
