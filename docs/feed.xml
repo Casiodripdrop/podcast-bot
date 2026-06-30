@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>Rocket Lab's $8B Iridium Bombshell + NASA's Telescope Rescue Mission</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Tuesday, June 30, 2026, and we have a genuinely wild day in space and robotics news — let's get into it.
+
+Okay, the story everyone is talking about: Rocket Lab is acquiring Iridium Communications for eight billion dollars. That's an all-stock deal,...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-30.mp3" length="5551775" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-30.mp3</guid>
+      <pubDate>Tue, 30 Jun 2026 04:02:14 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>AGIBOT's 15,000th Robot + Euclid Peers Into the Milky Way's Heart</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It is Monday, June 29, 2026, and we've got a couple of genuinely exciting stories to dig into today — one from the world of robotics, one from deep space. Let's get into it.
@@ -29,19 +42,6 @@ First up, a major milestone in embodied AI. Chinese robotics company AGIBOT...</
       <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-29.mp3" length="4319819" type="audio/mpeg" />
       <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-29.mp3</guid>
       <pubDate>Mon, 29 Jun 2026 04:02:01 +0000</pubDate>
-      <itunes:duration>300</itunes:duration>
-      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Deeptech Daily — Sunday, June 28, 2026</title>
-      <link>https://casiodripdrop.github.io/podcast-bot</link>
-      <description>I need more articles to work with to fill out a proper episode. Let me work with what's available, but the content is quite thin — I'll do my best with these three articles plus reasonable context.
-
-{"title": "Asia's AI Breakout: The Export Ban Creating a New Tech Superpower", "script": "Hey...</description>
-      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-06-28.mp3" length="5031356" type="audio/mpeg" />
-      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-06-28.mp3</guid>
-      <pubDate>Sun, 28 Jun 2026 04:01:58 +0000</pubDate>
       <itunes:duration>300</itunes:duration>
       <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
       <itunes:explicit>false</itunes:explicit>
