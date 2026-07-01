@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>NASA's $600M Moon Push + A Startup Wants 100K Data Centers in Orbit</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome to Deeptech Daily. It's Wednesday, July 01, 2026, and we've got a packed show today — moon missions, orbital data centers, major robotics money, and more. Let's get into it.
+
+We're starting with a big one out of NASA. The agency just awarded nearly $600 million across four...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-01.mp3" length="4562465" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-01.mp3</guid>
+      <pubDate>Wed, 01 Jul 2026 04:02:16 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Rocket Lab's $8B Iridium Bombshell + NASA's Telescope Rescue Mission</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It's Tuesday, June 30, 2026, and we have a genuinely wild day in space and robotics news — let's get into it.
