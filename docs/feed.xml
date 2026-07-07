@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>China Reaches an Asteroid + Agility Robotics Goes Public</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It is Tuesday, July 07, 2026, and we have got a packed show today — from a spacecraft arriving at a near-Earth asteroid to a humanoid robotics company heading for the public markets. Let's get into it.
+
+We're going to start in deep space, because this...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-07.mp3" length="5451331" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-07.mp3</guid>
+      <pubDate>Tue, 07 Jul 2026 04:02:38 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>NASA's Self-Thinking Mars Rover + Humanoid Robots Hit 99.9% Dexterity</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily — it's Monday, July 06, 2026, and we have got a packed episode today covering some genuinely exciting developments in space and robotics. Let's get into it.
