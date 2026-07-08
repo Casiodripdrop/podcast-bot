@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>India's First Orbital Launch + A Nuclear Satellite Just Reached Orbit</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome to Deeptech Daily — it's Wednesday, July 08, 2026, and we've got a packed day in space and robotics. Let's get into it.
+
+Alright, so the big story I want to start with: a nuclear-powered commercial satellite just reached orbit. SpaceX's Transporter-17 rideshare mission...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-08.mp3" length="5351898" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-08.mp3</guid>
+      <pubDate>Wed, 08 Jul 2026 04:02:31 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>China Reaches an Asteroid + Agility Robotics Goes Public</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It is Tuesday, July 07, 2026, and we have got a packed show today — from a spacecraft arriving at a near-Earth asteroid to a humanoid robotics company heading for the public markets. Let's get into it.
