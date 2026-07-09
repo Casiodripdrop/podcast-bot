@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>ispace Books Starship Moon Cargo + SpaceX's Grok Takes on Claude</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome to Deeptech Daily. It's Thursday, July 09, 2026, and we've got a packed episode today — moon cargo, a nuclear first in space, a big AI model launch, and more. Let's get into it.
+
+Starting with space, and a story that really shows how commercial lunar ambitions are scaling up...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-09.mp3" length="5741077" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-09.mp3</guid>
+      <pubDate>Thu, 09 Jul 2026 04:03:18 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>India's First Orbital Launch + A Nuclear Satellite Just Reached Orbit</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome to Deeptech Daily — it's Wednesday, July 08, 2026, and we've got a packed day in space and robotics. Let's get into it.
