@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>SpaceX Wants 100,000 Starlinks + Humanoid Robots Perform Surgery</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Friday, July 10, 2026, and we've got a packed show today — from SpaceX filing for an absurdly large satellite constellation to humanoid robots picking up scalpels for the first time. Let's get into it.
+
+We'll start with SpaceX, because they never...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-10.mp3" length="6425280" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-10.mp3</guid>
+      <pubDate>Fri, 10 Jul 2026 04:02:51 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>ispace Books Starship Moon Cargo + SpaceX's Grok Takes on Claude</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome to Deeptech Daily. It's Thursday, July 09, 2026, and we've got a packed episode today — moon cargo, a nuclear first in space, a big AI model launch, and more. Let's get into it.
