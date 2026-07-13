@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>Starship Flight 13 is Coming + Bioprinting Organs in Space</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Monday, July 13, 2026, and we've got some genuinely exciting stuff to dig into today — from a historic space telescope arriving in Florida to organs being printed in orbit. Let's get into it.
+
+First up, SpaceX is gearing up for Starship Flight 13,...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-13.mp3" length="5164489" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-13.mp3</guid>
+      <pubDate>Mon, 13 Jul 2026 04:02:42 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Falcon 9's 35th Flight &amp; Satellite-Connected Dog Collars</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It's Sunday, July 12, 2026, and we've got some genuinely fun stories today — from record-breaking rocket reuse to tiny cubesat engines backed by the Space Force. Let's get into it.
