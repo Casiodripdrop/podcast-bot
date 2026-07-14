@@ -2,3 +2,8 @@ feedparser
 anthropic
 openai
 mutagen
+Pillow
+moviepy
+google-auth
+google-auth-oauthlib
+google-api-python-client

@@ -10,11 +10,10 @@ from fetch_news import (
 )
 from generate_script import generate_script, ScriptGenerationError
 from generate_audio import generate_audio, tag_mp3
+from generate_video import generate_video
+from upload_youtube import upload_video
 from build_feed import add_episode, build_rss, build_index_html
 
-# Unter dieser Anzahl neuer Artikel wird der Tag ausgelassen, statt eine
-# erzwungene Episode ohne echte Substanz zu erzeugen. Dank mehr Quellen und
-# der Anti-Erfindungs-Regel im Prompt reicht ein niedriger Wert hier aus.
 MIN_ARTICLES = 2
 
 
@@ -31,37 +30,57 @@ def main():
 
     if len(articles) < MIN_ARTICLES:
         print(f"Only {len(articles)} new article(s) found (minimum is "
-              f"{MIN_ARTICLES}) -- skipping today's episode rather than "
-              f"forcing a thin one.")
+              f"{MIN_ARTICLES}) -- skipping today's episode.")
         return
 
     date_human = datetime.utcnow().strftime("%A, %B %d, %Y")
     try:
         result = generate_script(articles, date_human)
     except ScriptGenerationError:
-        print("Script generation failed (invalid response from Claude) -- "
-              "skipping today's episode rather than publishing broken content.")
+        print("Script generation failed -- skipping today's episode.")
         return
 
     episode_title = result["title"]
     script_text = result["script"]
 
+    # Audio
     mp3_filename = f"episode-{today}.mp3"
     os.makedirs("docs", exist_ok=True)
     mp3_path = os.path.join("docs", mp3_filename)
     generate_audio(script_text, mp3_path)
     tag_mp3(mp3_path, title=episode_title)
 
+    # Podcast-Feed aktualisieren
     file_size = os.path.getsize(mp3_path)
     description = script_text[:300].rsplit(" ", 1)[0] + "..."
-
     episodes = add_episode(episode_title, description, mp3_filename, file_size)
     build_rss(episodes)
     build_index_html(episodes)
 
-    # Alle heute betrachteten Artikel als "gesehen" markieren (auch die, die
-    # Claude am Ende nicht ins Skript aufgenommen hat -- sonst koennten sie
-    # morgen erneut auftauchen, obwohl sie schon "alte" News sind).
+    # Video generieren
+    video_path = "docs/latest_short.mp4"
+    try:
+        generate_video(mp3_path=mp3_path, title=episode_title, output_path=video_path)
+    except Exception as e:
+        print(f"Video-Generierung fehlgeschlagen (Podcast laeuft trotzdem): {e}")
+        video_path = None
+
+    # YouTube-Upload (nur wenn Video erfolgreich und Secrets vorhanden)
+    if video_path and os.path.exists(video_path):
+        if os.environ.get("YOUTUBE_REFRESH_TOKEN"):
+            try:
+                upload_video(
+                    video_path=video_path,
+                    title=episode_title,
+                    description=description,
+                    date_str=today,
+                )
+            except Exception as e:
+                print(f"YouTube-Upload fehlgeschlagen (Podcast laeuft trotzdem): {e}")
+        else:
+            print("YOUTUBE_REFRESH_TOKEN nicht gesetzt, ueberspringe Upload.")
+
+    # Gesehene Artikel speichern
     seen = mark_as_seen(all_fetched, seen, today)
     save_seen_links(seen)
 

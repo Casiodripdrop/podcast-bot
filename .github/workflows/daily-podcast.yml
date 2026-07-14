@@ -1,8 +1,7 @@
 name: Daily Podcast
 
-# Wird taeglich extern via cron-job.org getriggert (GitHubs eigener
-# "schedule"-Trigger verzoegerte sich zuverlaessig um Stunden). Der
-# "Run workflow"-Button in der Actions-UI funktioniert weiterhin fuer Tests.
+# Wird taeglich extern via cron-job.org getriggert.
+# Der "Run workflow"-Button funktioniert weiterhin fuer Tests.
 on:
   workflow_dispatch: {}
 
@@ -18,6 +17,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install FFmpeg
+        run: sudo apt-get install -y ffmpeg
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -28,6 +30,9 @@ jobs:
           PODCAST_BASE_URL: ${{ vars.PODCAST_BASE_URL }}
           PODCAST_OWNER_EMAIL: ${{ vars.PODCAST_OWNER_EMAIL }}
           PODCAST_OWNER_NAME: ${{ vars.PODCAST_OWNER_NAME }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
         run: python main.py
 
       - name: Commit and push new episode
