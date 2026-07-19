@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>India Reaches Orbit + Japan's Reusable Rocket Lands</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily — it's Sunday, July 19, 2026, and we've got a genuinely exciting day in space and robotics to dig into. Let's get into it.
+
+We have to start with what might be the biggest story of the week: India's Skyroot Aerospace just made history. Their Vikram-1...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-19.mp3" length="4304896" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-19.mp3</guid>
+      <pubDate>Sun, 19 Jul 2026 04:03:42 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>India's First Private Orbital Rocket + NASA Kills Lunar Lander</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It's Saturday, July 18, 2026, and we've got a packed episode today — from a historic rocket launch in India to a surprise cancellation on the lunar frontier. Let's get into it.
