@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>SpaceX Launches a Satellite Repair Drone — and Artemis Gets 4K</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome to Deeptech Daily. It's Wednesday, July 22, 2026, and we've got a packed episode today — satellites being repaired in orbit, NASA going full 4K to the Moon, a humanoid robot unicorn, and more. Let's get into it.
+
+The biggest story today has to be the launch of Northrop...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-22.mp3" length="5827559" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-22.mp3</guid>
+      <pubDate>Wed, 22 Jul 2026 04:03:14 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Starship Flight 13 Rescheduled + AI Attacks Hugging Face</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome to Deeptech Daily. It's Tuesday, July 21, 2026, and we've got a packed slate today — from SpaceX's latest launch drama to a genuinely alarming AI security breach you need to hear about. Let's get into it.
