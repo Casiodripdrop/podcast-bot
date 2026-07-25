@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>Starship Flight 13 Sticks the Landing — And Deploys Real Satellites</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome to Deeptech Daily. It's Saturday, July 25, 2026, and we've got a packed episode today — rockets, robots, and a defense startup that just got a staggering new valuation. Let's get into it.
+
+Okay, the big story — and it's a big one — is Starship Flight 13. SpaceX launched the...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-25.mp3" length="5696878" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-25.mp3</guid>
+      <pubDate>Sat, 25 Jul 2026 04:02:36 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Travis Kalanick's $1.7B Robotics Bet + NASA's Workforce Crisis</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It's Friday, July 25, 2026, and we have got a packed show for you today — big robotics money, a shake-up at a major autonomous driving company, and some real turbulence over at NASA. Let's get into it.
