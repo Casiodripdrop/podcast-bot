@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>Juno's Shocking Io Discovery + The Motor Company Built to Last</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Monday, July 27, 2026, and we've got some genuinely fascinating science and a great company story to dig into today — let's get into it.
+
+We're going to start in space, because NASA's Juno spacecraft just delivered some remarkable new findings...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-27.mp3" length="3734108" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-27.mp3</guid>
+      <pubDate>Mon, 27 Jul 2026 04:02:32 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Starship's 13th Flight Sets Up a Tower Catch + J&amp;J's Surgical Robot Revealed</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It's Sunday, July 26, 2026, and we've got some genuinely exciting stuff to dig into today — from SpaceX's latest Starship milestone to a first look at a next-generation surgical robot. Let's get into it.
