@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>NASA's Roman Telescope Launches Early + SpaceX Rocket Hits the Moon</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome to Deeptech Daily. It's Friday, July 31, 2026, and we've got a packed show today — space, robotics, AI, and some big money moves. Let's get into it.
+
+First up, some genuinely exciting news from NASA. The Roman Space Telescope is on track to launch in late August — and here's...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-07-31.mp3" length="4254862" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-07-31.mp3</guid>
+      <pubDate>Fri, 31 Jul 2026 04:02:27 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>SpaceX's $1.6B Military Win + The US Foreign Robot Ban Fallout</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome to Deeptech Daily. It's Thursday, July 30, 2026, and we've got a packed show today — big military contracts, a controversial robot ban, and some exciting space news. Let's get into it.
