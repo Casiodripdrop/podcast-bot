@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>China's Rocket Landing + Starship's 24-Day Ocean Rescue</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Wednesday, August 19, 2026, and we've got a packed show today — rockets, robots, and some big moves in the startup world. Let's get into it.
+
+Okay, let's start with what is genuinely one of the more exciting moments in commercial spaceflight this...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-08-19.mp3" length="4516988" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-08-19.mp3</guid>
+      <pubDate>Wed, 19 Aug 2026 04:03:16 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>ESA Spacewalk Live + Nvidia's $21B SpaceX Stake Revealed</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It is Tuesday, August 18, 2026, and we have got a packed show today — a live spacewalk, a staggering investment disclosure, and a genuine lunar debris wake-up call. Let's get into it.
