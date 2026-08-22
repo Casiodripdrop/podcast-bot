@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>Starship Goes Orbital + 6,500 Satellites by 2035</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Saturday, August 22, 2026, and we've got a packed show today — space is absolutely on fire right now, and the robotics world has some big moves too. Let's get into it.
+
+We have to start with Starship. SpaceX just completed a single-engine test...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-08-22.mp3" length="4251364" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-08-22.mp3</guid>
+      <pubDate>Sat, 22 Aug 2026 04:02:24 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>China's Moon Ice Hunt + Nevada Clears 8,000 Robotaxis</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It's Friday, August 21, 2026, and we've got a packed slate today — from a lunar ice-hunting mission about to launch, to thousands of robotaxis getting the green light, to a major shift in US space policy. Let's get into it.
