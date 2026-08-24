@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>Waymo's Secret Chip + Roman Telescope Launch Week</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Monday, August 24, 2026, and we've got a packed lineup today spanning space science, autonomous vehicles, and some genuinely wild ideas coming out of NASA's innovation pipeline. Let's get into it.
+
+First up, we are one week out from a major moment...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-08-24.mp3" length="4380135" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-08-24.mp3</guid>
+      <pubDate>Mon, 24 Aug 2026 04:02:27 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>SpaceX's 100th Launch of 2026 + Battery Startups' Defense Lifeline</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It's Sunday, August 23, 2026, and we've got a packed mix of space milestones, some big-picture robotics thinking, and a financial story that could reshape an entire industry. Let's get into it.
