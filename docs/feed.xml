@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>SpaceX's 100th Launch, Roman Telescope Liftoff &amp; $900M for Humanoids</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Tuesday, August 25, 2026, and we have got a packed day in space and robotics — let's get into it.
+
+Okay, let's start with something that's genuinely worth pausing on. SpaceX is hitting its 100th Falcon 9 launch of the year today — and to make it...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-08-25.mp3" length="4192978" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-08-25.mp3</guid>
+      <pubDate>Tue, 25 Aug 2026 04:02:30 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Waymo's Secret Chip + Roman Telescope Launch Week</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome back to Deeptech Daily. It's Monday, August 24, 2026, and we've got a packed lineup today spanning space science, autonomous vehicles, and some genuinely wild ideas coming out of NASA's innovation pipeline. Let's get into it.
