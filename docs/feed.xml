@@ -21,6 +21,19 @@
     </itunes:owner>
     
     <item>
+      <title>Roman Telescope Launches Today + SpaceX Fires Up Starship's 33 Engines</title>
+      <link>https://casiodripdrop.github.io/podcast-bot</link>
+      <description>Hey everyone, welcome back to Deeptech Daily. It's Sunday, August 30, 2026, and we have got a genuinely exciting day in space to talk about — plus some interesting moves in robotics and the launch ecosystem. Let's get into it.
+
+Okay, the big one first. Today is launch day for NASA's Nancy Grace...</description>
+      <enclosure url="https://casiodripdrop.github.io/podcast-bot/episode-2026-08-30.mp3" length="4241799" type="audio/mpeg" />
+      <guid>https://casiodripdrop.github.io/podcast-bot/episode-2026-08-30.mp3</guid>
+      <pubDate>Sun, 30 Aug 2026 04:02:25 +0000</pubDate>
+      <itunes:duration>300</itunes:duration>
+      <itunes:image href="https://casiodripdrop.github.io/podcast-bot/cover.jpg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Roman Space Telescope Launches Tomorrow + Humanoid Robot Soccer is Here</title>
       <link>https://casiodripdrop.github.io/podcast-bot</link>
       <description>Hey everyone, welcome to Deeptech Daily. It's Saturday, August 29, 2026, and we've got a packed show today — rockets, robots playing soccer, and a billion dollars in chip-buying debt. Let's get into it.
